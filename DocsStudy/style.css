@@ -9,17 +9,29 @@ body{
     margin: 0;
     font-family: "Montserrat", serif;
     background-color: #89c2d9;
+    opacity: 90%;
 }
 
 header{
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 60px 0 60px;
     line-height: 50px;
     text-align: center;
-    background-color: #468faf ;
+    background: linear-gradient(to bottom, #01497c  ,#468faf 100%);
+}
+
+main{
+    margin: 0 auto;
+    width: 80%;
+    height: 200px;
+    opacity: 60%;
+    background: linear-gradient(to bottom, #2a6f97 , #01497c 100%); /* De azul para vermelho */
+}
+
+main section, article, aside{
+    margin: 5rem 10rem 5rem 10rem;
 }
 
 footer{
@@ -31,18 +43,18 @@ footer{
 }
 
 nav{
-    border: 1px solid red;
+    
 }
 
 ul{
-    border: 1px solid red;
+    margin: 0 auto;
     display: flex;
     list-style: none;
     gap: 32px;
     padding: 0 40px;
 }
 
-li a{
+header li a{
     text-decoration: none;
     color: white;
     font-size: 1.2rem;
