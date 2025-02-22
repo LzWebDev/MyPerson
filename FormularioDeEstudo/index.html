@@ -4,6 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        form {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
     <main>
@@ -23,6 +63,10 @@
                 <input type="text" name="email" id="email">
                 <span class="error" id="erroEmail"></span>
 
+                <label for="idade">Data de nascimente:</label>
+                <input type="date" name="idade" id="idade">
+                <span class="error" id="erroIdade"></span>
+
                 <label for="senha">Senha:</label>
                 <input type="text" name="senha" id="senha">
                 <span class="error" id="erroSenha"></span>
@@ -31,6 +75,7 @@
                 <input type="text" name="repetirSenha" id="repetirSenha">
                 <span class="error" id="erroRepetirSenha"></span>
 
+                <button type="submit">Cadastrar</button>
             </form>
         </div>
     </main>
