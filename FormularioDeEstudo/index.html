@@ -6,7 +6,34 @@
     <title>Formulário</title>
 </head>
 <body>
-    
+    <main>
+        <div>
+            <h2>Cadastro</h2>
+            <form id="FormularioCadastro">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <span class="error" id="erroName"></span>
+                
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" id="sobrenome" name="sobrenome">
+                <span class="error" id="erroSobrenome"></span>
+
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">
+                <span class="error" id="erroEmail"></span>
+
+                <label for="senha">Senha:</label>
+                <input type="text" name="senha" id="senha">
+                <span class="error" id="erroSenha"></span>
+
+                <label for="repetirSenha">Repita a senha:</label>
+                <input type="text" name="repetirSenha" id="repetirSenha">
+                <span class="error" id="erroRepetirSenha"></span>
+
+            </form>
+        </div>
+    </main>
 
     <link rel="stylesheet" href="formulario.js">
 </body>
